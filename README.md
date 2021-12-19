@@ -6,7 +6,7 @@
 
 Toxiproxy is a framework for simulating network conditions. It's made
 specifically to work in testing, CI and development environments, supporting
-deterministic tampering with connections, but with support for randomized chaos
+deterministic tampering with connections, but with the support for randomized chaos
 and customization. **Toxiproxy is the tool you need to prove with tests that
 your application doesn't have single points of failure.** We've been
 successfully using it in all development and test environments at Shopify since
@@ -88,7 +88,7 @@ development and CI environments.
 
 ## Example
 
-Let's walk through an example with a Rails application. Note that Toxiproxy is
+Let's walk through an example with an Rails application. Note that Toxiproxy is
 in no way tied to Ruby, it's just been our first use case. You can see the full example at
 [sirupsen/toxiproxy-rails-example](https://github.com/sirupsen/toxiproxy-rails-example).
 To get started right away, jump down to [Usage](#usage).
@@ -494,7 +494,7 @@ All endpoints are JSON.
 
 #### Populating Proxies
 
-Proxies can be added and configured in bulk using the `/populate` endpoint. This is done by
+Proxies can be added and the configured in bulk using the `/populate` endpoint. This is done by
 passing a json array of proxies to toxiproxy. If a proxy with the same name already exists,
 it will be compared to the new proxy and replaced if the `upstream` and `listen` address don't match.
 
